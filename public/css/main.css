@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	font-family: inherit;
+}
+
+input, select, option {
+	font-family: inherit;
+}
+
+form * {
+	display: inline-block;
+}
