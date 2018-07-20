@@ -5,8 +5,8 @@ include '../resources/includes/init.php';
 
 
 if (isset($_GET['artist_name'])) {
-	$search_term = '%' . $_GET['artist_name'] . '%';
-	echo "Search term: {$search_term}";
+	$search_term =  $_GET['artist_name'] . '%';
+//	echo "Search term: {$search_term}";
 	$stmt = $db->prepare("SELECT `name` FROM `artist` WHERE `name` LIKE ?");
 	$stmt->bind_param('s', $search_term);
 	$stmt->execute();
@@ -16,6 +16,7 @@ if (isset($_GET['artist_name'])) {
 		$matches[] = $artist['name'];
 	}
 	echo json_encode($matches);
+	// test
 }
 
 ?>

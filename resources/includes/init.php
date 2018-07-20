@@ -30,8 +30,19 @@ function output($variable) {
     echo '<pre>'; print_r($variable); echo '</pre>';
 }
 
-function verify_image($path) {
-	return getimagesize($path) !== false;
+// W3Schools
+// Check if image file is a actual image or fake image
+function verify_image($file) {
+    return (getimagesize($file) !== false);
+}
+
+// Check if file already exists
+
+// Check file size
+
+// Allow certain file formats
+function file_type($file) {
+    return strtolower(pathinfo($file, PATHINFO_EXTENSION));
 }
 
 ?>

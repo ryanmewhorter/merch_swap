@@ -1,17 +1,84 @@
 @charset "UTF-8";
 
 html {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 10pt;
+	height: 100%;
 }
 
 body {
+	height: 100%;
+	background-color: dimgray;
+}
+
+h1 { font-size: 200%; }
+h2 { font-size: 150%; }
+
+p, a, input, select, option, textarea {
+	font-size: 100%;
 	font-family: inherit;
 }
 
-input, select, option {
-	font-family: inherit;
+textarea {
+	border: #CCC 1px solid;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul#sitenav li {
+	display: inline;
+}
+
+div#main {
+	width: 700px;
+	height: 100%;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: #DDD 1px solid;
+	border-right: #DDD 1px solid;
+}
+
+div#main div#header {
+	background-color: #333;
+	color: #FFF;
+	padding: 10px;
+}
+
+div#main div#content {
+	padding: 20px;
 }
 
 form * {
 	display: inline-block;
+}
+
+input, select, textarea {
+	padding: 5px;
+	margin: 5px;
+}
+
+ul#item_photos_preview {
+	border: #CCC 2px solid;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+ul#item_photos_preview li {
+	padding: 10px;
+}
+
+ul#item_photos preview li img {
+	
+}
+
+img.item_photo {
+	max-width: 128px;
 }
